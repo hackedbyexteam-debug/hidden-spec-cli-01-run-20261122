@@ -1,0 +1,19 @@
+=== mend — proof of practice checks passing ===
+Generated: 2026-11-23 10:27:08 UTC (Mon 2026-11-23, WIB evening)
+Entry: ~/workspace/makefun/hidden-spec-cli-01-run-20261122 (main.ts)
+
+--- 1) kit practice checks (node check.ts program/generator/practice.json) ---
+100 of 100 passed: practice score 1000
+
+--- 2) full trial runs via kit env server + sealed scorer (trial-0/1/2) ---
+trial-0: score 1000 working 1 passed 100 unified 30 search_replace 20 v4a 20 json 15 cli 15
+trial-1: score 1000 working 1 passed 100 unified 30 search_replace 20 v4a 20 json 15 cli 15
+trial-2: score 1000 working 1 passed 100 unified 30 search_replace 20 v4a 20 json 15 cli 15
+
+--- 3) kit grade-local (MAKEFUN_OFFLINE=1 node cli/makefun.mjs grade-local --kit . --bot <entry> --driver process --worktree) ---
+  scores  {"cli":15,"json":15,"passed":100,"score":1000,"search_replace":20,"unified":30,"v4a":20,"working":1} (the scorer's scores.json)
+scores    {"cli":15,"json":15,"passed":100,"score":1000,"search_replace":20,"unified":30,"v4a":20,"working":1} (each column's mean over the one trial; no 90% interval at one trial)
+checks    1000 of 1000 points over 100 checks (each trial's checks summed, the mean over the one trial)
+
+--- 4) extra edge-case suite (74 cases, /tmp/mend-edge.mjs) ---
+74 passed, 0 failed
